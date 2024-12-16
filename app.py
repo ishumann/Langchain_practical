@@ -1,7 +1,7 @@
 # Q&A Chatbot
 import os
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 # from lanchain.llms import OpenAI
 from langchain_openai import OpenAI # for gpt 3.5 turbo
 from langchain_community.chat_models import ChatOpenAI  # gpt-4o-mini
@@ -12,7 +12,7 @@ import streamlit as st
 
 def get_openai_response(question):
     llm = ChatOpenAI(
-        openai_api_key=os.getenv("OPENAI_API_KEY"),
+        # openai_api_key=os.getenv("OPENAI_API_KEY"),
         model_name="gpt-4o-mini",
         temperature=0.5,
     )
